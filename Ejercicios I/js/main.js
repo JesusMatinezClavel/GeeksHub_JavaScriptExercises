@@ -1,3 +1,7 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////                           EJERCICIOS I                          ///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 // // Reto 01
 // // 1. Declara 2 variables numéricas (con el valor que desees), he indica cual es mayor de los
@@ -121,25 +125,59 @@
 // }
 // console.log(suma)
 
-let edad = 16;
-let mayorEdad;
+// let edad = 16;
+// let mayorEdad;
 
 
-mayorEdad = (edad >= 18)
-    ? console.log("si")
-    : (edad=16)
-         ? console.log("16si")
-         : console.log("nop")
+// mayorEdad = (edad >= 18)
+//     ? console.log("si")
+//     : (edad=16)
+//          ? console.log("16si")
+//          : console.log("nop")
 
 
 
 // 11. Crea una aplicación que nos pida un día de la semana y que nos diga si es un día laboral
 // o no. Usa un switch para ello.
 
+// let dia = prompt("dime un dia de la semana").toLowerCase()
+
+// let semana = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
+
+// switch (dia) {
+//     case semana[0]:
+//     case semana[1]:
+//     case semana[2]:
+//     case semana[3]:
+//     case semana[4]:
+//         res = "laboral";
+//         break;
+//     case semana[5]:
+//     case semana[6]:
+//         res = "festivo";
+//         break;
+//     }
+//     console.log(dia)
+
+
+
 // 12. Escribe una aplicación con un String que contenga una contraseña cualquiera. Después
 // se te pedirá que introduzcas la contraseña, con 3 intentos. Cuando aciertes ya no pedirá
 // más la contraseña y mostrará un mensaje diciendo “Enhorabuena”. Piensa bien en la
 // condición de salida (3 intentos y si acierta sale, aunque le queden intentos).
+
+// let pass = 1234
+
+// let tries = 3
+
+
+// for (let i = 0; i < tries; i++) {
+//     contraseña = prompt("dime la contraseña")
+//     if (contraseña == pass) {
+//         console.log("enhorabuena!")
+//         i = tries
+//     }
+// }
 
 
 // 13. Crea una aplicación llamada CalculadoraInversa, nos pedirá 2 operandos (int) y un signo
@@ -152,3 +190,34 @@ mayorEdad = (edad >= 18)
 // /: divide los operandos, este debe dar un resultado con decimales (double)
 // ^: 1o operando como base y 2o como exponente.
 // %: módulo, resto de la división entre operando1 y operando2.
+
+// let operando1 = parseInt(prompt("Ingrese el primer operando:"));
+// let operacion = prompt("Ingrese el signo aritmético (+, -, *, /, ^, %):");
+// let operando2 = parseInt(prompt("Ingrese el segundo operando:"));
+
+// let resultado;
+
+// switch (operacion) {
+//     case '+':
+//         resultado = operando1 + operando2;
+//         break;
+//     case '-':
+//         resultado = operando1 - operando2;
+//         break;
+//     case '*':
+//         resultado = operando1 * operando2;
+//         break;
+//     case '/':
+//         resultado = operando1 / operando2;
+//         break;
+//     case '^':
+//         resultado = Math.pow(operando1, operando2);
+//         break;
+//     case '%':
+//         resultado = operando1 % operando2;
+//         break;
+//     default:
+//         console.log("Operación no válida");
+// }
+
+// console.log("Resultado: " + resultado);
