@@ -342,21 +342,34 @@
 // ***
 // ****
 
-const ejercicio = () => {
-    fila = ""
-    for (i = 0; i < 5; i++) {
-        i < 5
-            ? fila = console.log("*")
-            : fila = console.log(" ")
-        fila = ""
-    }
-}
+// const ejercicio = () => {
+//     let fila = ""
+//     for (i = 0; i < 5; i++) {
+//         for (x = 4; x >= 0; x--) {
+//             i >= x ? fila += "*" : fila += " "
+//         }
+//         console.log(fila)
+//         fila = ""
+//     }
+// }
 
-ejercicio()
+// ejercicio()
 
 // 6. Con la cantidad de líneas que indique el usuario.
 
+// const ejercicio = () => {
+//     num = parseInt(prompt("dime la altura que quieres"))
+//     let fila = ""
+//     for (i = 0; i < num; i++) {
+//         for (x = num - 1; x >= 0; x--) {
+//             i >= x ? fila += "*" : fila += " "
+//         }
+//         console.log(fila)
+//         fila = ""
+//     }
+// }
 
+// ejercicio()
 
 
 
@@ -364,6 +377,17 @@ ejercicio()
 // el usuario.
 
 
+// const ejercicio = () => {
+//     num = parseInt(prompt("dime la altura que quieres"))
+//     res = 0
+//     for (i = 0; i <= num; i++) {
+//         res += i
+//         console.log(i, res)
+//     }
+//     console.log("la suma es " + res)
+// }
+
+// ejercicio()
 
 
 
@@ -373,11 +397,39 @@ ejercicio()
 
 
 
+// const ejercicio = () => {
+//     list = []
+//     res=0
+//     for (i=1;i<=4;i++){
+//         // num = parseInt(prompt("dime un numero"))
+//         num = parseInt((Math.random()*10).toFixed(0))
+//         list.push(num)
+//     }
+//     console.log(list)
+//     for(i=0;i<4;i++){
+//         res += list[i]
+//         console.log(res)
+//     }
+//     media = res/4
+//     console.log(media)
+// }
+
+// ejercicio()
 
 // 8. Saca por consola los números primos del 0 al número que introduzca un usuario por
 // prompt.
 
 
+// const ejercicio = () => {
+//     num = parseInt(prompt("dime un numero"))
+//     for (i = 0; i <= num; i++) {
+//         i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0
+//             ? console.log(i)
+//             : null
+//     }
+// }
+
+// ejercicio()
 
 
 
@@ -388,15 +440,70 @@ ejercicio()
 
 
 
+// Primera versión
+// const ejercicio = () => {
+//     num = 50
+//     for (i=num;i>=0,i--){
+//         console.log(i)
+//     }
+// }
 
+
+
+// Segunda versión
+// const ejercicio = () => {
+//     num1 = parseInt(prompt("dime un numero"))
+//     num2 = parseInt(prompt("dime un numero mas bajo"))
+//     for (i = num1; i >= num2; i--) {
+//         console.log(i)
+//     }
+// }
+
+
+
+// Tercera versión
+// const ejercicio = () => {
+//     // num1 = parseInt(prompt("dime un numero"))
+//     // num2 = parseInt(prompt("dime otro numero"))
+//     num1 = 50
+//     num2 = 80
+//     if (num1 < num2) {
+//         for (i = num2; i >= num1; i--) {
+//             console.log(i)
+//         }
+//     } else {
+//         for (i = num1; i >= num2; i--) {
+//             console.log(i)
+//         }
+//     }
+// }
+
+// ejercicio()
 
 // 10. Pide al usuario cinco números, almacénalos en un array y muestra por consola el
 // resultado de cada uno de ellos multiplicado por 3. Muestra también un array que contenga
 // todos los resultados.
 
 
+const ejercicio = () => {
+
+    lista = []
+    listaMult = []
+    for (i = 0; i < 5; i++) {
+        // num = parseInt(prompt("dime un numero"))
+        num = parseInt((Math.random() * 10).toFixed(0))
+        lista.push(num)
+    }
+    console.log(lista)
+    for (i = 0; i < lista.length; i++) {
+        listaMult.push(lista[i]*3)
+    }
+    console.log("x3".padStart(10))
+    console.log(listaMult)
+}
 
 
+ejercicio()
 
 
 
