@@ -495,7 +495,7 @@
 //         lista.push(num)
 //     }
 //     console.log(lista)
-//     for (i = 0; i < lista.length; i++) {
+//     lista.foreach(item,index)=> {
 //         listaMult.push(lista[i]*3)
 //     }
 //     console.log("x3".padStart(10))
@@ -507,7 +507,7 @@
 
 
 
-  
+
 ///////////////////////////////////////////////////////////                              FUNCIONES                            //////////////////////////////////////////////////////////
 
 
@@ -516,26 +516,60 @@
 
 // 1. Crea una función que convierta grados celsius a grados fahrenheit.
 
+// const ejercicio = () => {
+//     let Celsius = 36
+//     let Farenh
+//     celToFar = (Celsius * 9 / 5) + 32
+//     farToCel = (Farenh - 160) / 9
+//     return celToFar
+// }
+
+// console.log(ejercicio())
+
+
 
 
 
 // 2. Crea una función que determine si un número es par o impar.
 
+// num = Math.floor(Math.random()*10)
+// const ejercicio = (a) => { 
+//     console.log(a)
+//     a%2===0
+//         ? console.log("es par")
+//         : console.log("es impar")
+// }
 
-
-
+// ejercicio(num)
 
 // 3. Crea una función que determine si un número es primo o no.
 
+// num = Math.floor(Math.random() * 10)
+// const ejercicio = (a) => {
+//     console.log(a)
+//     a === 2 || a === 3 || a === 5
+//         ? console.log("es primo")
+//         : a % 2 === 0 || a % 3 === 0 || a % 5 === 0
+//             ? console.log("no es primo")
+//             : console.log("es primo")
+// }
 
-
+// ejercicio(num)
 
 
 // 4. Crea una función que reciba un número de dni como parámetro, y devuelva la letra del
 // mismo. Si el dni tiene algún error debe comunicarlo. Recuerda que el array de letras de DNI
 // es [TRWAGMYFPDXBNJZSQVHLCKE].
 
+// let dniLetters = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]
+// const ejercicio = () => {
+//     num = 29216960
+//     res = num % 23
+//     console.log("tu letra del dni es " + dniLetters[res])
+// }
 
+
+// ejercicio()
 
 
 
@@ -543,40 +577,129 @@
 // incluido. Si no recibe el iva, aplicará el 21 por ciento por defecto.
 
 
+// const ejercicio = () => {
+//     precio = parseFloat(prompt("dime el precio"))
+//     iva = (parseInt(prompt("dime el iva"))) / 100
+//     iva === 0
+//         ? iva = 0.21
+//         : precioFinal = (precio * iva) + precio
+//     return precioFinal
+// }
 
+// console.log(ejercicio())
 
 
 // 6. Crea una función que determine si una letra es una vocal o una consonante.
 
-
-
+// const ejercicio = () => {
+//     word = "murcielago"
+//     wordList = Array.from(word)
+//     console.log(wordList)
+//     wordList.forEach((item, index) => {
+//         switch (true) {
+//             case item === "a":
+//                 console.log("hay una a en el indice " + index)
+//                 break;
+//             case item === "e":
+//                 console.log("hay una e en el indice " + index)
+//                 break;
+//             case item === "i":
+//                 console.log("hay una i en el indice " + index)
+//                 break;
+//             case item === "o":
+//                 console.log("hay una o en el indice " + index)
+//                 break;
+//             case item === "u":
+//                 console.log("hay una u en el indice " + index)
+//                 break;
+//             default:
+//                 break;
+//         }
+//     });
+// }
+// console.log(ejercicio())
 
 
 // 7. Crea una función que, dada una frase, convierta las A en 4, las E en 3, las I en 1 y las O
 // en 0.
 
+// const ejercicio = () => {
+//     frase = "dame algo de dinero, please"
+//     fraseList = Array.from(frase)
+//     fraseList = fraseList.map((item) => {
+//         switch (true) {
+//             case (item === "a"):
+//                 return "4"
+//                 break;
+//             case (item === "e"):
+//                 return "3"
+//                 break;
+//             case (item === "i"):
+//                 return "1"
+//                 break;
+//             case (item === "o"):
+//                 return "0"
+//                 break;
+//             default:
+//                 return item
+//                 break;
+//         }
+//     });
+//     console.log(fraseList)
+//     fraseChange = fraseList.join("")
+//     console.log(fraseChange)
+// }
 
-
-
+// ejercicio()
 
 // 8. Crea una función que, dada una frase, cuente la cantidad de una letra en la misma. Por
 // ejemplo, dada la palabra “javascript” y la letra “a”, debería devolver un 2.
 
+// const ejercicio = () => { 
+//     frase = "dame algo de dinero, por favor"
+//     cant= 0
+//     fraseList = Array.from(frase)
+//     fraseList.forEach(item => {
+//             item === "a"
+//                 ? cant++
+//                 : null  
+//     });
+//     return cant
+// }
 
-
-
+// console.log(ejercicio())
 
 // 9. Crea una función que, dado un array de números, devuelva el número más grande del
 // mismo.
 
+// const ejercicio = () => {
+//     lista = [2, 5, 72, 67, 3, 1, 795, 7, 37, 21, 59, 123, 63, 29, 45]
+//     max = 0
+//     for (let i = 0; i < lista.length; i++) {
+//         lista[i] > max
+//             ? max = lista[i]
+//             : null
+//     }
+//     return max
+// }
 
+// console.log(ejercicio())
 
 
 
 // 10. Crea una función que, dado un array de números, devuelva la suma de todos los
 // números que contiene.
 
+// const ejercicio = () => {
+//     lista = [2, 4, 6, 2, 8, 6, 2]
+//     total = 0
+//     for (let i = 0; i < lista.length; i++) {
+//         total += lista[i]
+//     }
+//     return total
+// }
 
+// console.log(ejercicio())
 
 
 
@@ -584,5 +707,16 @@
 // número(A).
 
 
+// const ejercicio = () => {
+//     a = 10
+//     b = 60
+//     perc = (b/100)
+//     slice = a*perc
+    
+
+//     return slice
+// }
+
+// console.log(ejercicio())
 
 
